@@ -15,7 +15,18 @@ following:
 6. When the OS is compiled you can find an image in `bin/targets/ar71xx/generic/lede-ar71xx-generic-dpt-module-v1-squashfs-sysupgrade.bin`
 7. Copy the file to the `/tmp` directory on your DPT-Module
 8. Run `sysupgrade -n -v /tmp/lede-ar71xx-generic-dpt-module-v1-squashfs-sysupgrade.bin` to upgrade your DPT-Module. Be aware that all settings and files will be lost.
-  
+
+## Login to your DPT-Module/DPT-Board
+
+The DPT-Board OS has a default root account:
+
+username: root
+password: dptechnics
+
+Make sure that you change the root password to one of your own to make the
+board secure. You can do this by logging in through SSH and issuing the `passwd`
+command.
+
 ## Requirements
 
 You need to have installed gcc, binutils, bzip2, flex, python, perl, make,
